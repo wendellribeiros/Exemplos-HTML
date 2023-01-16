@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>PrimeiroForm</title>
+    <title>Document</title>
   </head>
   <body>
     <h3>Cadastro da liga dos astronautas</h3>
     <form action="">
-      <label for="Nome"
-        >Nome: <input type="text" id="name" name="user_nome"
-      /></label>
+      Nome: <input type="text" />
       <br />
       <br />
-      <label for="Email">Email: <input type="email" name="" id="" /></label>
-      <label for="Password">
-        - Password: <input type="password" name="" id=""
-      /></label>
+      Email: <input type="email" name="email" autocomplete="off" /> - Password:
+      <input type="password" name="pass" />
+      <br />
+      <br />
+      Data de nascimento: <input type="date" name="nasc" /> - Foto:
+      <input type="file" name="foto" />
+      <br />
+      <br />
+      Nacionalidade: <input list="paises" />
+      <datalist id="paises">
+        <option value="Inglês"></option>
+        <option value="Americano"></option>
+        <option value="Chinês"></option>
+        <option value="Russo"></option>
+      </datalist>
     </form>
   </body>
 </html>
