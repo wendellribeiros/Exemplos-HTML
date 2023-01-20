@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Document</title>
+    <title>Cadastro da liga dos astronautas</title>
   </head>
   <body>
     <h3>Cadastro da liga dos astronautas</h3>
     <form action="">
-      Nome: <input type="text" />
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" />
+      </div>
       <br />
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" autocomplete="off" /> -
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" />
+      </div>
       <br />
-      Email: <input type="email" name="email" autocomplete="off" /> - Password:
-      <input type="password" name="pass" />
+      <div>
+        <label for="birthday">Data de nascimento</label>
+        <input type="date" name="birthday" /> -
+        <label for="photo">Foto:</label>
+        <input type="file" name="photo" id="photo" />
+      </div>
       <br />
+      <div>
+        <label for="nationaly">Nacionalidade:</label>
+        <select name="nationality" id="nationality">
+          <option value="russian">Russa</option>
+          <option value="american">Americana</option>
+          <option value="brasilian">Brasileira</option>
+        </select>
+
+        - Gênero:
+        <label for="female">F</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="male">M</label>
+        <input type="radio" name="gender" id="male" value="male" />
+      </div>
       <br />
-      Data de nascimento: <input type="date" name="nasc" /> - Foto:
-      <input type="file" name="foto" />
-      <br />
-      <br />
-      Nacionalidade: <input list="paises" />
-      <datalist id="paises">
-        <option value="Inglês"></option>
-        <option value="Americano"></option>
-        <option value="Chinês"></option>
-        <option value="Russo"></option>
-      </datalist>
-      - Gênero: F<input type="radio" name="M" id="" value="M" /> M<input
-        type="radio"
-        name="F"
-        id=""
-        value="F"
-      />
+      <div>
+        <p>Suas principais qualidades:</p>
+      </div>
     </form>
     <form action="">
       <br />
