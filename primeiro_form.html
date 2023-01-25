@@ -32,7 +32,6 @@
           <option value="american">Americana</option>
           <option value="brasilian">Brasileira</option>
         </select>
-
         - Gênero:
         <label for="female">F</label>
         <input type="radio" name="gender" id="female" value="female" />
@@ -41,30 +40,30 @@
       </div>
       <br />
       <div>
-        <p>Suas principais qualidades:</p>
+        Suas principais qualidades:<br />
+        <label for="int">Inteligência</label>
+        <input type="checkbox" name="int" id="int" /> |
+        <label for="res">Resiliênicia</label>
+        <input type="checkbox" name="res" id="res" />|
+        <label for="physic">Preparo Físico</label>
+        <input type="checkbox" name="physic" id="physic" />|
+        <label for="edu">Edução</label>
+        <input type="checkbox" name="edu" id="edu" />
       </div>
-    </form>
-    <form action="">
-      <br />
-      Suas principais qualidades:
-      <form>
-        Inteligência <input type="checkbox" name="" id="" />| Resiliência
-        <input type="checkbox" name="" id="" />| Preparo físico
-        <input type="checkbox" name="" id="" />| Educação
-        <input type="checkbox" name="" id="" />|
-      </form>
-      <form action="">
+      <div>
         <br />
         <textarea
           placeholder="Porque você gostaria de ser um astronauta?"
-          name=""
-          id=""
+          name="description"
+          id="description"
           cols="30"
           rows="10"
         ></textarea>
+      </div>
+      <div>
         <br />
         <input type="submit" value="Criar" />
-      </form>
+      </div>
     </form>
   </body>
 </html>
